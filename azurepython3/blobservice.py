@@ -268,8 +268,8 @@ class BlobService(AzureService):
                         <AllowedOrigins>{origins}</AllowedOrigins>
                         <AllowedMethods>{methods}</AllowedMethods>
                         <MaxAgeInSeconds>{age}</MaxAgeInSeconds>
-                        <ExposedHeaders>x-ms-meta-data*,x-ms-meta-customheader</ExposedHeaders>
-                        <AllowedHeaders>x-ms-meta-target*,x-ms-meta-customheader</AllowedHeaders>
+                        <ExposedHeaders>*</ExposedHeaders>
+                        <AllowedHeaders>*</AllowedHeaders>
                     </CorsRule>
                 </Cors>
                 <DefaultServiceVersion>{version}</DefaultServiceVersion>
